@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Avenir Bold;
+  src: url(../assets/fonts/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(../assets/fonts/AvenirLTStd-Book.otf);
+}
+
+.header {
+  font-family: Avenir Bold;
+  margin-bottom: 20px;
+}
+
+.inputEmail {
+  font-family: Avenir;
+  height: 60px;
+  background-color: #d2d2d240;
+}
+
+.footer {
+  height: 60px;
+}
+
+.footer p {
+  font-size: 20px;
+  margin-left: 70px;
+  margin-top: 20px;
+}

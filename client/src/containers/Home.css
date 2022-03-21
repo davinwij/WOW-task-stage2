@@ -1,0 +1,241 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 120px;
+}
+
+.pp {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 60px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px grey;
+  margin-bottom: 20px;
+}
+
+.pp img {
+  width: 150px;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.profileMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+  margin-top: 40px;
+}
+
+.profileMenu p {
+  margin-left: -30px;
+  margin-top: -2px;
+  font-size: 20px;
+  color: #929292;
+  height: 25px;
+  width: 50px;
+}
+
+.profileMenu img {
+  width: 20px;
+  position: absolute;
+  margin-left: -70px;
+  cursor: pointer;
+}
+
+.hero {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .banner {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(179, 179, 179);
+  width: 800px;
+  height: 350px;
+  background-color: #ffd9d9;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .banner .hero-banner {
+  width: 850px;
+  height: 400px;
+}
+
+.hero .banner .hero-new-book {
+  width: 170px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 500px;
+  cursor: pointer;
+}
+
+.list {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 20px;
+}
+
+.book-list h4 {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 75ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.book-list h6 {
+  font-family: Avenir;
+  color: #929292;
+}
+
+.book-list img {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+.profile-detail {
+  margin: 30px;
+  width: 800px;
+  height: 250px;
+  background-color: #ffd9d9;
+  display: flex;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 20px;
+  margin-left: 220px;
+}
+
+.profile-img img {
+  width: 230px;
+}
+
+.btn-edit {
+  margin: 20px;
+  margin-left: 220px;
+}
+
+.info {
+  height: 60px;
+}
+
+.info img {
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.subscribe-info {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-info img {
+  position: absolute;
+  width: 40px;
+}
+
+.line2 {
+  margin-top: 30px;
+}
+
+.line2 img {
+  margin-left: 330px;
+  margin-top: -25px;
+}
+
+.line3 {
+  margin-top: 10px;
+}
+
+.line4 {
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.line4 img {
+  width: 15px;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 8px;
+}
+
+.inputFile {
+  color: #d60000;
+  font-weight: bold;
+  border: 2px solid #bcbcbc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+  padding-top: 5px;
+  padding: 5px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.left-detail {
+  width: 280px;
+}
+
+.right-detail {
+  width: 600px;
+  height: 400px;
+}
+
+.left-detail img {
+  width: 250px;
+  margin: 20px auto;
+}
+
+.book-desc {
+  height: 580px;
+}
+
+.book-desc p {
+  text-align: justify;
+  width: 80ch;
+  height: 500px;
+  color: #929292;
+  font-weight: "400";
+  font-size: "25px";
+}
+
+.book-btn {
+  margin-left: 590px;
+  display: flex;
+}
+
+.book-btn img {
+  width: 10px;
+  margin-left: 16px;
+}
