@@ -108,7 +108,7 @@ function Home(){
                                                 showSubscribeModal()
                                             }                                                                                                                                                                                                                        
                                         }}>
-                                            <img src={"http://localhost:5000/uploads/" + data.bookFile} alt={data.image} />
+                                            <img src={"http://localhost:5000/uploads/" + data.imageFile} alt={data.imageFile} />
                                             <h4> <b>{data.title}</b> </h4>
                                             <h6>{data.author}</h6>
                                         </Card>                                                                                                                        

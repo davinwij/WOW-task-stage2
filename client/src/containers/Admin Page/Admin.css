@@ -65,7 +65,7 @@ td .down {
   width: 50px;
   margin-top: 20px;
   margin-bottom: 50px;
-  margin-left: 140px;
+  margin-left: 255px;
 }
 
 .formAddBook {
@@ -107,11 +107,12 @@ textarea {
   width: 12px;
   position: absolute;
   margin-top: 26px;
-  margin-left: 140px;
+  margin-left: 150px;
 }
 
 .--input-btn {
   margin-left: 790px;
+  margin-top: 100px;
 }
 
 .--input-btn img {
@@ -130,4 +131,8 @@ textarea {
   text-align: left;
   color: white;
   border-radius: 5px;
+}
+
+.add-form form {
+  margin-left: 125px;
 }

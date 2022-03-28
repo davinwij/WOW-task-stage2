@@ -147,7 +147,7 @@ function Profile() {
                                      
                                         }                                                                                                                                                                                                                        
                                     }>
-                                    <img src={"http://localhost:5000/uploads/" + item.bookFile} alt="" />
+                                    <img src={"http://localhost:5000/uploads/" + item.imageFile} alt="" />
                                     <h4> <b>{item.title}</b> </h4>
                                     <h6>{item.author}</h6>
                                 </Card>                                                                                                                                                                                                                                                                                        

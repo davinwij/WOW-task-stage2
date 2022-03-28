@@ -16,7 +16,8 @@ function AddBook() {
     author: "",
     isbn: "",
     about: "",
-    image: ""
+    imageFile: "",
+    bookFile: ""
   })
 
   const handleChange = (e) => {
@@ -24,7 +25,7 @@ function AddBook() {
       ...form,
       [e.target.name]:
         e.target.type === "file" ? e.target.files : e.target.value,
-    });
+    });    
   }
 
   const navigate = useNavigate()
@@ -45,7 +46,9 @@ function AddBook() {
     formData.set("author", form.author)
     formData.set("isbn", form.isbn)
     formData.set("about", form.about)
-    formData.set("bookFile", form.image[0], form.image[0].name)
+    formData.set("imageFile", form.imageFile[0], form.imageFile[0].name)
+    formData.set("bookFile", form.bookFile[0], form.bookFile[0].name)
+
 
     const response = await API.post(`/book`, formData, config)
     console.log(response)
@@ -56,7 +59,7 @@ function AddBook() {
     }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit =  (e) => {
     e.preventDefault()
     newBook()
     navigate('/dashboard')
@@ -69,7 +72,7 @@ function AddBook() {
           <Row className='col-2'>            
               <h3 className='input-title'>Add Book</h3>            
           </Row>
-          <Row className="col-8 ">
+          <Row className="col-8 add-form">
             <form onSubmit={handleSubmit}>
               <div className="formAddBook">            
                 <div>
@@ -90,10 +93,15 @@ function AddBook() {
                 <div>
                   <textarea name="about" onChange={handleChange} id="" cols="30" rows="10" placeholder='About This Book'></textarea>            
                 </div>
-                <div className='--input-file'>
+                <div className='--input-file'>  
                   <img src={pin} alt="" />
                   <label htmlFor="file"  className='input-file'> Attche Book File</label>
-                  <input type="file" onChange={handleChange} name='image' id='file' hidden/>
+                  <input type="file" onChange={handleChange} name='bookFile' id='file' hidden/>
+                </div>
+                <div className='--input-file'>
+                  <img src={pin} alt="" />
+                  <label htmlFor="file2"  className='input-file'> Attche Book Image</label>
+                  <input type="file" onChange={handleChange} name='imageFile' id='file2' hidden/>
                 </div>
               </div>
               <div className="--input-btn">

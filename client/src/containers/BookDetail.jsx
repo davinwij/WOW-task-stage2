@@ -18,10 +18,7 @@ function BookDetail() {
 
     const navigate = useNavigate()
 
-    const directToBook = () => {
-        navigate('/book')
-    }
-
+    
     const [status, setStatus] = useState(false)
 
     const getUserStatus = async () => {
@@ -58,7 +55,7 @@ function BookDetail() {
             }
         })        
     }
-
+    
     const setToMyList = async () => {
         try {
             const response = await API.post(`/addlist/${id}`)                        
@@ -81,6 +78,8 @@ function BookDetail() {
         checkUserBook()
     }, [bookData])
 
+    const bookFile = books.bookFile
+
     useEffect(() => {
         getUserStatus()
         getBook()        
@@ -100,7 +99,7 @@ function BookDetail() {
                         <Row>
                             <Col className='detail-info d-flex mt-5'>
                                 <div className="left-detail">
-                                    <img src={"http://localhost:5000/uploads/" + books.bookFile} alt="" />
+                                    <img src={"http://localhost:5000/uploads/" + books.imageFile} alt="" />
                                 </div>
                                 <div className="right-detail">
                                     <Row className="book-info mt-4">                                        
@@ -162,7 +161,10 @@ function BookDetail() {
                                     }
                                 </Col>
                                 <Col>
-                                    <Button onClick={directToBook}  style={{ backgroundColor:"#CDCDCDB2", color:"black", fontWeight:"600", textAlign:"left", width:"130px", border:"none", marginLeft:"20px"}}>
+                                    <Button onClick={() => {
+                                         navigate('/book', { bookFile })
+                                    }}                                  
+                                    style={{ backgroundColor:"#CDCDCDB2", color:"black", fontWeight:"600", textAlign:"left", width:"130px", border:"none", marginLeft:"20px"}}>
                                         Read Book
                                         <img src={v} alt="" />  
                                     </Button>
